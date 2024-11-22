@@ -1,17 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>SP Logo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/niy5vxr.css">
 </head>
 
 <body>
-    <div class="logo">
-        <div class="sp">
-            <img src="Logo.svg">
-        </div>
+    <div class="banner">
+        <div class="title">SUPARNA</div>
+        <div class="title">PAL</div>
+        <br/>
     </div>
-</body>
+    <div class="timerReload">*reloading in 
+        <span id="timeReload" class="timeReload"></span>
+    </div>
 
+    <script>
+        let countdownValue = 5;
+        const timeReloadElement = document.getElementById('timeReload');
+
+        function updateCountdown() {
+            if (countdownValue <= 0) {
+                window.location.href = 'homepage.html';
+            } else {
+                timeReloadElement.textContent = countdownValue;
+                countdownValue--;
+            }
+        }
+
+        setInterval(updateCountdown, 1000);
+    </script>
+</body>
 </html>

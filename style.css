@@ -1,15 +1,102 @@
 body {
     margin: 0;
     padding: 0;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
-    background: #000;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    background: #1a1a1a;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.sp {
+.banner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    font-family: 'Acumin Pro', sans-serif;
+    font-weight: bold;
+    color: #ded0c6;
+    font-size: 180px;
     position: relative;
-    width: 360px;
-    height: 520px;
-    overflow: hidden;
+    z-index: 2;
+    opacity: 0.9;
+    margin: 0;
+    animation-delay: 4s;
+    animation: glitch 3s infinite;
+    cursor: pointer;
+}
+
+.text {
+    font-family: "obliqua", sans-serif;
+    font-weight: 300;
+    color: #ded0c6;
+    font-size: 25px;
+}
+
+.timerReload {
+    font-family: "obliqua", sans-serif;
+    font-weight: 300;
+    color: #ded0c6;
+    font-size: 25px;
+    margin-top: 100px;
+}
+
+@keyframes glitch {
+    3% {
+        text-shadow: 7px 7px 0px #cc3d86;
+    }
+    6% {
+        text-shadow: -9px 4px 0px #2d52e5;
+        transform:translate(4px,-10px) skewX(3240deg);
+    }
+    7% {
+        text-shadow: 3px -4px 0px #51cc7a;
+    }
+    9% {
+        text-shadow: 0px 0px 3px #ded0c6;
+        transform:translate(0px,0px) skewX(0deg);
+    }
+    2%, 54% {
+        transform:translateX(0px) skew(0deg);
+    }
+    55% {
+        transform:translate(-2px,6px) skew(-5530deg);
+    }
+    56% {
+        text-shadow: 0px 0px 3px #ded0c6;
+        transform:translate(0px,0px) skew(0deg);
+    }
+    57% {
+        text-shadow: 7px 7px 0px #cc3d86;
+        transform:translate(4px,-10px) skew(-70deg);
+    }
+    58% {
+        text-shadow: 0px 0px 3px #ded0c6;
+        transform:translate(0px,0px) skew(0deg);
+    }
+    62% {
+        text-shadow: 3px -4px 0px #51cc7a;
+        transform:translate(0px,20px) skew(0deg);
+    }
+    63% {
+        text-shadow:0px 0px 3px #ded0c6;
+        transform:translate(4px,-2px) skew(0deg);
+    }
+    64% {
+        transform:translate(1px,3px);
+        transform:skew(-230deg);
+    }
+    65% {
+        transform:translate(-7px,2px);
+        transform:skew(120deg);
+    }
+    66% {
+        transform:translate(0px,0px) skew(0deg);
+    }
 }
