@@ -41,7 +41,7 @@ body {
 
 .timerReload {
     font-family: "obliqua", sans-serif;
-    font-weight: 300;
+    font-weight: 450;
     color: #ded0c6;
     font-size: 25px;
     margin-top: 100px;
@@ -59,7 +59,6 @@ body {
         text-shadow: 3px -4px 0px #51cc7a;
     }
     9% {
-        text-shadow: 0px 0px 3px #ded0c6;
         transform:translate(0px,0px) skewX(0deg);
     }
     2%, 54% {
@@ -69,7 +68,6 @@ body {
         transform:translate(-2px,6px) skew(-5530deg);
     }
     56% {
-        text-shadow: 0px 0px 3px #ded0c6;
         transform:translate(0px,0px) skew(0deg);
     }
     57% {
@@ -85,7 +83,6 @@ body {
         transform:translate(0px,20px) skew(0deg);
     }
     63% {
-        text-shadow:0px 0px 3px #ded0c6;
         transform:translate(4px,-2px) skew(0deg);
     }
     64% {
